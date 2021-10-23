@@ -2,8 +2,11 @@ server:
   port: ${PORT:5000}
 
 eureka:
+  server:
+    maxThreadsForPeerReplication: 0
   instance:
     hostname: localhost
+    prefer-ip-address: true
   client:
     registerWithEureka: false
     fetchRegistry: false
