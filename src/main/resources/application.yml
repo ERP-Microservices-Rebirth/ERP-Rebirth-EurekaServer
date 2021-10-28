@@ -2,7 +2,7 @@ spring:
   application:
     name: erp-eureka
 server:
-  port: ${PORT:5000}
+  port: ${PORT:8761}
 eureka:
   server:
     maxThreadsForPeerReplication: 0
